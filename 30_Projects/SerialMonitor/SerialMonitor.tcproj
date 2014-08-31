@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Version="0.1">
+  <Properties>
+    <Property Name="Title">Serial Monitor</Property>
+    <Property Name="Version">1.0</Property>
+    <Property Name="Author">Leonid Lezner</Property>
+    <Property Name="ShowProjectTree">True</Property>
+    <Property Name="ShowLog">True</Property>
+    <Property Name="VerboseLoad">True</Property>
+    <Property Name="WindowHeight">845</Property>
+    <Property Name="WindowWidth">1183</Property>
+    <Property Name="Description">Demo Project for RS232 Monitoring</Property>
+  </Properties>
+  <Components>
+    <Component Type="Target" Ident="De.Bitmarker.Target.Serial">
+      <Properties>
+        <Property Name="Port">COM10</Property>
+		<Property Name="Baud">9600</Property>
+      </Properties>
+    </Component>
+  </Components>
+  <Views>
+    <View Name="Console" Ident="De.Bitmarker.Target.Serial.Views.Console" AutoOpen="true" />
+  </Views>
+</Project>
